@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPVisaWebClient", "NPVisaWebClient\NPVisaWebClient.csproj", "{88EEF70A-ECE7-436C-A8CB-39DF20C4AA2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88EEF70A-ECE7-436C-A8CB-39DF20C4AA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EEF70A-ECE7-436C-A8CB-39DF20C4AA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EEF70A-ECE7-436C-A8CB-39DF20C4AA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EEF70A-ECE7-436C-A8CB-39DF20C4AA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67122C2B-1562-46DA-BA19-9BB271A0EB6E}
+	EndGlobalSection
+EndGlobal

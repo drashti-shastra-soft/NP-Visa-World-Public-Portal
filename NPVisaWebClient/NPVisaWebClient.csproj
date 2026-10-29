@@ -1,0 +1,325 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88EEF70A-ECE7-436C-A8CB-39DF20C4AA2B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NPVisaWebClient</RootNamespace>
+    <AssemblyName>NPVisaWebClient</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44374</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\color\theme-color.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\flaticon.css" />
+    <Content Include="assets\css\font-awesome-all.css" />
+    <Content Include="assets\css\jquery.fancybox.min.css" />
+    <Content Include="assets\css\nice-select.css" />
+    <Content Include="assets\images\NP-Visa-World-V2.png" />
+    <Content Include="assets\css\owl.css" />
+    <Content Include="assets\css\owl.video.play.html" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\rtl.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\switcher-style.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\Flaticon.svg" />
+    <Content Include="assets\images\background\page-title-2.jpg" />
+    <Content Include="assets\images\background\page-title-3.jpg" />
+    <Content Include="assets\images\background\page-title-4.jpg" />
+    <Content Include="assets\images\background\page-title-5.jpg" />
+    <Content Include="assets\images\background\page-title-6.jpg" />
+    <Content Include="assets\images\background\page-title-7.jpg" />
+    <Content Include="assets\images\background\page-title.jpg" />
+    <Content Include="assets\images\banner\banner-1.jpg" />
+    <Content Include="assets\images\banner\banner-2.jpg" />
+    <Content Include="assets\images\banner\banner-3.jpg" />
+    <Content Include="assets\images\banner\banner-4.jpg" />
+    <Content Include="assets\images\banner\banner-5.jpg" />
+    <Content Include="assets\images\banner\banner-6.jpg" />
+    <Content Include="assets\images\clients\clients-logo-1.png" />
+    <Content Include="assets\images\clients\clients-logo-2.png" />
+    <Content Include="assets\images\clients\clients-logo-3.png" />
+    <Content Include="assets\images\clients\clients-logo-4.png" />
+    <Content Include="assets\images\favicon.ico" />
+    <Content Include="assets\images\footer-logo.png" />
+    <Content Include="assets\images\icons\arrow-1.png" />
+    <Content Include="assets\images\icons\map-marker.png" />
+    <Content Include="assets\images\icons\preloader.png" />
+    <Content Include="assets\images\logo-2.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\news\comment-1.jpg" />
+    <Content Include="assets\images\news\comment-2.jpg" />
+    <Content Include="assets\images\news\news-1.jpg" />
+    <Content Include="assets\images\news\news-10.jpg" />
+    <Content Include="assets\images\news\news-11.jpg" />
+    <Content Include="assets\images\news\news-12.jpg" />
+    <Content Include="assets\images\news\news-13.jpg" />
+    <Content Include="assets\images\news\news-14.jpg" />
+    <Content Include="assets\images\news\news-15.jpg" />
+    <Content Include="assets\images\news\news-2.jpg" />
+    <Content Include="assets\images\news\news-3.jpg" />
+    <Content Include="assets\images\news\news-4.jpg" />
+    <Content Include="assets\images\news\news-5.jpg" />
+    <Content Include="assets\images\news\news-6.jpg" />
+    <Content Include="assets\images\news\news-7.jpg" />
+    <Content Include="assets\images\news\news-8.jpg" />
+    <Content Include="assets\images\news\news-9.jpg" />
+    <Content Include="assets\images\news\post-1.jpg" />
+    <Content Include="assets\images\news\post-2.jpg" />
+    <Content Include="assets\images\news\post-3.jpg" />
+    <Content Include="assets\images\news\support-1.jpg" />
+    <Content Include="assets\images\np-logo.png" />
+    <Content Include="assets\images\NP-Visa-World.png" />
+    <Content Include="assets\images\resource\about-1.jpg" />
+    <Content Include="assets\images\resource\about-2.jpg" />
+    <Content Include="assets\images\resource\about-3.jpg" />
+    <Content Include="assets\images\resource\about-4.jpg" />
+    <Content Include="assets\images\resource\about-5.jpg" />
+    <Content Include="assets\images\resource\apply-1.jpg" />
+    <Content Include="assets\images\resource\apply-2.jpg" />
+    <Content Include="assets\images\resource\choose-1.jpg" />
+    <Content Include="assets\images\resource\feature-1.jpg" />
+    <Content Include="assets\images\resource\feature-2.jpg" />
+    <Content Include="assets\images\resource\feature-3.jpg" />
+    <Content Include="assets\images\resource\immigration-1.jpg" />
+    <Content Include="assets\images\resource\immigration-2.jpg" />
+    <Content Include="assets\images\resource\immigration-3.jpg" />
+    <Content Include="assets\images\resource\immigration-4.jpg" />
+    <Content Include="assets\images\resource\immigration-5.jpg" />
+    <Content Include="assets\images\resource\immigration-6.jpg" />
+    <Content Include="assets\images\resource\immigration-7.jpg" />
+    <Content Include="assets\images\resource\immigration-8.jpg" />
+    <Content Include="assets\images\resource\immigration-9.jpg" />
+    <Content Include="assets\images\resource\offer-1.jpg" />
+    <Content Include="assets\images\resource\offer-2.jpg" />
+    <Content Include="assets\images\resource\offer-3.jpg" />
+    <Content Include="assets\images\resource\offer-4.jpg" />
+    <Content Include="assets\images\resource\testimonial-1.png" />
+    <Content Include="assets\images\resource\testimonial-2.png" />
+    <Content Include="assets\images\resource\training-1.jpg" />
+    <Content Include="assets\images\resource\training-2.jpg" />
+    <Content Include="assets\images\resource\training-3.jpg" />
+    <Content Include="assets\images\resource\training-4.jpg" />
+    <Content Include="assets\images\service\service-1.jpg" />
+    <Content Include="assets\images\service\service-10.jpg" />
+    <Content Include="assets\images\service\service-11.jpg" />
+    <Content Include="assets\images\service\service-12.jpg" />
+    <Content Include="assets\images\service\service-13.jpg" />
+    <Content Include="assets\images\service\service-14.jpg" />
+    <Content Include="assets\images\service\service-15.jpg" />
+    <Content Include="assets\images\service\service-16.jpg" />
+    <Content Include="assets\images\service\service-17.jpg" />
+    <Content Include="assets\images\service\service-18.jpg" />
+    <Content Include="assets\images\service\service-19.jpg" />
+    <Content Include="assets\images\service\service-2.jpg" />
+    <Content Include="assets\images\service\service-20.jpg" />
+    <Content Include="assets\images\service\service-3.jpg" />
+    <Content Include="assets\images\service\service-4.jpg" />
+    <Content Include="assets\images\service\service-5.jpg" />
+    <Content Include="assets\images\service\service-6.jpg" />
+    <Content Include="assets\images\service\service-7.jpg" />
+    <Content Include="assets\images\service\service-8.jpg" />
+    <Content Include="assets\images\service\service-9.jpg" />
+    <Content Include="assets\images\shape\pattern-1.png" />
+    <Content Include="assets\images\shape\pattern-2.png" />
+    <Content Include="assets\images\shape\pattern-3.png" />
+    <Content Include="assets\images\shape\pattern-4.png" />
+    <Content Include="assets\images\shape\pattern-5.png" />
+    <Content Include="assets\images\shape\pattern-6.png" />
+    <Content Include="assets\images\small-logo.png" />
+    <Content Include="assets\images\team\team-1.jpg" />
+    <Content Include="assets\images\team\team-10.jpg" />
+    <Content Include="assets\images\team\team-2.jpg" />
+    <Content Include="assets\images\team\team-3.jpg" />
+    <Content Include="assets\images\team\team-4.jpg" />
+    <Content Include="assets\images\team\team-5.jpg" />
+    <Content Include="assets\images\team\team-6.jpg" />
+    <Content Include="assets\images\team\team-7.jpg" />
+    <Content Include="assets\images\team\team-8.jpg" />
+    <Content Include="assets\images\team\team-9.jpg" />
+    <Content Include="assets\js\appear.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\gmaps.js" />
+    <Content Include="assets\js\jquery.fancybox.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jquery.nice-select.min.js" />
+    <Content Include="assets\js\jQuery.style.switcher.min.js" />
+    <Content Include="assets\js\map-helper.js" />
+    <Content Include="assets\js\owl.js" />
+    <Content Include="assets\js\pagenav.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\scrollbar.js" />
+    <Content Include="assets\js\TweenMax.min.js" />
+    <Content Include="assets\js\validation.js" />
+    <Content Include="assets\js\wow.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-brands-400d41d.eot" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400d41d.eot" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\fa-solid-900d41d.eot" />
+    <Content Include="assets\fonts\Flaticon.eot" />
+    <Content Include="assets\fonts\Flaticon.ttf" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\Flaticon.woff2" />
+    <Content Include="assets\fonts\Flaticond41d.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50039</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44374/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
